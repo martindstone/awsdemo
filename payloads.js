@@ -115,9 +115,23 @@ var phd_elb_api_issue = {
     "UnsubscribeURL": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:785665517223:guard-duty:929fb486-5851-4cdc-8b25-8cc026afea70"
 };
 
-var phd_ec2_store_drive = {
+var phd_ec2_store_drive_west2 = {
   "Type" : "Notification",
-  "Message" : "{\n    \"version\": \"0\",\n    \"id\": \"7bf73129-1428-4cd3-a780-95db273d1602\",\n    \"detail-type\": \"AWS Health Event\",\n    \"source\": \"aws.health\",\n    \"account\": \"123456789012\",\n    \"time\": \"2016-06-05T06:27:57Z\",\n    \"region\": \"us-west-2\",\n    \"resources\": [\n        \"i-abcd1111\"\n    ],\n    \"detail\": {\n        \"eventArn\": \"arn:aws:health:us-west-2::event/AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED_90353408594353980\",\n        \"service\": \"EC2\",\n        \"eventTypeCode\": \"AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED\",\n        \"eventTypeCategory\": \"issue\",\n        \"startTime\": \"Sat, 05 Jun 2016 15:10:09 GMT\",\n        \"eventDescription\": [\n            {\n                \"language\": \"en_US\",\n                \"latestDescription\": \"A description of the event will be provided here\"\n            }\n        ],\n        \"affectedEntities\": [\n            {\n                \"entityValue\": \"i-abcd1111\"\n            }\n        ]\n    }\n}",
+  "Message" : "{\"version\": \"0\",\"id\": \"7bf73129-1428-4cd3-a780-95db273d1602\",\"detail-type\": \"AWS Health Event\",\"source\": \"aws.health\",\"account\": \"123456789012\",\"time\": \"2016-06-05T06:27:57Z\",\"region\": \"us-west-2\",\"resources\": [\"i-abcd1111\"],\"detail\": {    \"eventArn\": \"arn:aws:health:us-west-2::event/AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED_90353408594353980\",\"service\": \"EC2\",\"eventTypeCode\": \"AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED\",\"eventTypeCategory\": \"issue\",\"startTime\": \"Sat, 05 Jun 2016 15:10:09 GMT\",\"eventDescription\": [{\"language\": \"en_US\",\"latestDescription\": \"AWS has detected a performance degradation of one or more physical storage drives that backs the instance store volumes.\"}],\"affectedEntities\": [{\"entityValue\": \"i-abcd1111\"}]}\n}",
+  "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:PHD-test:7bdb10b4-7115-4b27-9057-d423ce900543"
+};
+
+var phd_ec2_store_drive_asia2 = {
+  "Type" : "Notification",
+  "Message" : "{\"version\": \"0\",\"id\": \"7bf73129-1428-4cd3-a780-95db273d1602\",\"detail-type\": \"AWS Health Event\",\"source\": \"aws.health\",\"account\": \"123456789012\",\"time\": \"2016-06-05T06:27:57Z\",\"region\": \"ap-southeast-2\",\"resources\": [\"i-abcd1111\"],\"detail\": {    \"eventArn\": \"arn:aws:health:ap-southeast-2::event/AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED_90353408594353980\",\"service\": \"EC2\",\"eventTypeCode\": \"AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED\",\"eventTypeCategory\": \"issue\",\"startTime\": \"Sat, 05 Jun 2016 15:10:09 GMT\",\"eventDescription\": [{\"language\": \"en_US\",\"latestDescription\": \"AWS has detected a performance degradation of one or more physical storage drives that backs the instance store volumes.\"}],\"affectedEntities\": [{\"entityValue\": \"i-abcd1111\"}]}\n}",
+  "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:PHD-test:7bdb10b4-7115-4b27-9057-d423ce900543"
+};
+
+var phd_ec2_store_drive_west1 = {
+  "Type" : "Notification",
+  "Message" : "{\"version\": \"0\",\"id\": \"7bf73129-1428-4cd3-a780-95db273d1602\",\"detail-type\": \"AWS Health Event\",\"source\": \"aws.health\",\"account\": \"123456789012\",\"time\": \"2016-06-05T06:27:57Z\",\"region\": \"us-west-1\",\"resources\": [\"i-abcd1111\"],\"detail\": {    \"eventArn\": \"arn:aws:health:us-west-1::event/AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED_90353408594353980\",\"service\": \"EC2\",\"eventTypeCode\": \"AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED\",\"eventTypeCategory\": \"issue\",\"startTime\": \"Sat, 05 Jun 2016 15:10:09 GMT\",\"eventDescription\": [{\"language\": \"en_US\",\"latestDescription\": \"AWS has detected a performance degradation of one or more physical storage drives that backs the instance store volumes.\"}],\"affectedEntities\": [{\"entityValue\": \"i-abcd1111\"}]}\n}",
   "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
   "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:PHD-test:7bdb10b4-7115-4b27-9057-d423ce900543"
 };
@@ -129,11 +143,32 @@ var phd_ebs_volume_lost = {
   "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:PHD-test:7bdb10b4-7115-4b27-9057-d423ce900543"
 };
 
+var new_relic_response_time_increase = {
+  "client": "New Relic",
+  "client_url": "https://rpm.newrelic.com/accounts/1218847/incidents/17615637",
+  "description": "Alert open: Response Time > 3000ms - Server: ip-172-30-0-227",
+  "event_type": "trigger",
+  "incident_key": "/Alert/1218847/17615637/13317445",
+  "details": {
+    "ConfigurationItem": "ACME ENET",
+    "AlertMessage": "Email dispatch delay from AM-FLOR-APVM012 server. Delay: 870 secs",
+    "CI": "ACME ENET",
+    "Priority": "2 - High"
+  }
+}
+
 var payloads = {
     "CloudTrail: Add User To Group": ct_add_user_to_group,
     "GuardDuty: RDP Brute Force Attack": rdp_brute_force,
     "GuardDuty: SSH Brute Force Attack": ssh_brute_force,
     "GuardDuty: DNS Data Exfiltration": dns_data_exfiltration,
     "GuardDuty: GuardDuty Changes": guard_duty_changes,
-    "GuardDuty: API's invoked": apis_invoked
+    "GuardDuty: API's invoked": apis_invoked,
+    "PHD: Elastic Load Balancer API Issue": phd_elb_api_issue,
+    "PHD: EC2 Store Drive Issue (US West 1)": phd_ec2_store_drive_west1,
+    "PHD: EC2 Store Drive Issue (US West 2)": phd_ec2_store_drive_west2,
+    "PHD: EC2 Store Drive Issue (AP SouthEast 2)": phd_ec2_store_drive_asia2,
+    "PHD: EBS Volume Lost (US East 1)": phd_ebs_volume_lost,
+    "New Relic: Response Time Increase": new_relic_response_time_increase
+    
 };
