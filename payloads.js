@@ -107,6 +107,33 @@ var ct_add_user_to_group = {
     }]
 };
 
+var ct_no2fa = {
+  "Type" : "Notification",
+  "TopicArn" : "arn:aws:sns:us-west-2:957132980467:SH-testing",
+  "Subject" : "ALARM: \"CloudTrail: No 2FA Used with Login\" in US West (Oregon)",
+  "Message" : "{\"AlarmName\":\"CloudTrail: No 2FA Used with Login\",\"AlarmDescription\":null,\"AWSAccountId\":\"957132980467\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 out of the last 1 datapoints [1.0 (16/11/18 23:41:00)] was greater than or equal to the threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition).\",\"StateChangeTime\":\"2018-11-16T23:46:47.242+0000\",\"Region\":\"US West (Oregon)\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"2FANotUsedOnLogin\",\"Namespace\":\"CloudTrailMetrics\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":null,\"Dimensions\":[],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\",\"userAgent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:62.0) Gecko/20100101 Firefox/62.0\",\"requestParameters\":null,\"ConsoleLogin\":\"Success\",\"LoginTo\":\"https://console.aws.amazon.com/console/home?state=hashArgs%23&isauthcode=true\",\"MobileVersion\":\"No\",\"MFAUsed\":\"No\"}}",
+  "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:SH-testing:4bcd8fec-6bd9-46af-834c-c4582e9d1f6d"
+};
+
+var ct_root_usage = {
+  "Type" : "Notification",
+  "TopicArn" : "arn:aws:sns:us-west-2:957132980467:SH-testing",
+  "Subject" : "ALARM: \"CloudTrail: Root Account Usage\" in US West (Oregon)",
+  "Message" : "{\"AlarmName\":\"CloudTrail: Root Account Usage\",\"AlarmDescription\":null,\"AWSAccountId\":\"957132980467\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 out of the last 1 datapoints [1.0 (16/11/18 23:41:00)] was greater than or equal to the threshold (1.0) (minimum 1 datapoint for OK -> ALARM transition).\",\"StateChangeTime\":\"2018-11-16T23:46:47.242+0000\",\"Region\":\"US West (Oregon)\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"RootAccountUsageCount\",\"Namespace\":\"CloudTrailMetrics\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":null,\"Dimensions\":[],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":1.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+  "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:SH-testing:4bcd8fec-6bd9-46af-834c-c4582e9d1f6d"
+};
+
+var ct_sign_in_failures = {
+  "Type" : "Notification",
+  "TopicArn" : "arn:aws:sns:us-west-2:957132980467:SH-testing",
+  "Subject" : "ALARM: \"CloudTrail: Console Sign-in Failures\" in US West (Oregon)",
+  "Message" : "{\"AlarmName\":\"CloudTrail: Console Sign-in Failures\",\"AlarmDescription\":null,\"AWSAccountId\":\"957132980467\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 out of the last 1 datapoints [3.0 (16/11/18 23:41:00)] was greater than or equal to the threshold (3.0) (minimum 1 datapoint for OK -> ALARM transition).\",\"StateChangeTime\":\"2018-11-16T23:46:47.242+0000\",\"Region\":\"US West (Oregon)\",\"OldStateValue\":\"INSUFFICIENT_DATA\",\"Trigger\":{\"MetricName\":\"ConsoleSigninFailureCount\",\"Namespace\":\"CloudTrailMetrics\",\"StatisticType\":\"Statistic\",\"Statistic\":\"SUM\",\"Unit\":null,\"Dimensions\":[],\"Period\":300,\"EvaluationPeriods\":1,\"ComparisonOperator\":\"GreaterThanOrEqualToThreshold\",\"Threshold\":3.0,\"TreatMissingData\":\"\",\"EvaluateLowSampleCountPercentile\":\"\"}}",
+  "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:SH-testing:4bcd8fec-6bd9-46af-834c-c4582e9d1f6d"
+};
+
 var phd_elb_api_issue = {
     "Type": "Notification",
     "Message":
@@ -158,7 +185,9 @@ var new_relic_response_time_increase = {
 }
 
 var payloads = {
-    "CloudTrail: Add User To Group": ct_add_user_to_group,
+    "CloudTrail: Sign In Failures": ct_sign_in_failures,
+    "CloudTrail: Root Account Usage": ct_root_usage,
+    "CloudTrail: No 2FA Auth": ct_no2fa,
     "GuardDuty: RDP Brute Force Attack": rdp_brute_force,
     "GuardDuty: SSH Brute Force Attack": ssh_brute_force,
     "GuardDuty: DNS Data Exfiltration": dns_data_exfiltration,
