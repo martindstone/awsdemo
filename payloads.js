@@ -71,40 +71,52 @@ var apis_invoked = {
   "UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:785665517223:PD-GuardDuty:658275cf-64ca-4874-a4e5-d20b4aa45416"
 };
 
-var ct_add_user_to_group = {
-    "Records": [
-    {
-        "eventVersion": "1.0",
-        "userIdentity":
-        {
-            "type": "IAMUser",
-            "principalId": "EX_PRINCIPAL_ID",
-            "arn": "arn:aws:iam::123456789012:user/Alice",
-            "accountId": "123456789012",
-            "accessKeyId": "EXAMPLE_KEY_ID",
-            "userName": "Alice",
-            "sessionContext":
-            {
-                "attributes":
-                {
-                    "mfaAuthenticated": "false",
-                    "creationDate": "2014-03-25T18:45:11Z"
-                }
-            }
-        },
-        "eventTime": "2014-03-25T21:08:14Z",
-        "eventSource": "iam.amazonaws.com",
-        "eventName": "AddUserToGroup",
-        "awsRegion": "us-east-2",
-        "sourceIPAddress": "127.0.0.1",
-        "userAgent": "AWSConsole",
-        "requestParameters":
-        {
-            "userName": "Bob",
-            "groupName": "admin"
-        },
-        "responseElements": null
-    }]
+var recon_network_permissions = {
+  "Type": "Notification",
+  "MessageId": "f5ec48ad-d6ab-5781-b041-1cf348b0edd6",
+  "TopicArn": "arn:aws:sns:us-east-1:785665517223:PD-GuardDuty",
+  "Message": "{\"version\":\"0\",\"id\":\"adf4dbb4-94dd-eaea-a076-b952733f0a6f\",\"detail-type\":\"GuardDuty Finding\",\"source\":\"aws.guardduty\",\"account\":\"785665517223\",\"time\":\"2018-11-08T20:25:00Z\",\"region\":\"us-east-1\",\"resources\":[],\"detail\":{\"schemaVersion\":\"2.0\",\"accountId\":\"785665517223\",\"region\":\"us-east-1\",\"partition\":\"aws\",\"id\":\"b8b37a7d5503c46a72d875e4293efd33\",\"arn\":\"arn:aws:guardduty:us-east-1:785665517223:detector/42b37a41c84bb93843b6829029ead712/finding/b8b37a7d5503c46a72d875e4293efd33\",\"type\":\"Recon:IAMUser/NetworkPermissions\",\"resource\":{\"resourceType\":\"AccessKey\",\"accessKeyDetails\":{\"accessKeyId\":\"GeneratedFindingAccessKeyId\",\"principalId\":\"GeneratedFindingPrincipalId\",\"userType\":\"IAMUser\",\"userName\":\"GeneratedFindingUserName\"}},\"service\":{\"serviceName\":\"guardduty\",\"detectorId\":\"42b37a41c84bb93843b6829029ead712\",\"action\":{\"actionType\":\"AWS_API_CALL\",\"awsApiCallAction\":{\"api\":\"GeneratedFindingAPIName\",\"serviceName\":\"GeneratedFindingAPIServiceName\",\"callerType\":\"Remote IP\",\"remoteIpDetails\":{\"ipAddressV4\":\"198.51.100.0\",\"organization\":{\"asn\":\"-1\",\"asnOrg\":\"GeneratedFindingASNOrg\",\"isp\":\"GeneratedFindingISP\",\"org\":\"GeneratedFindingORG\"},\"country\":{\"countryName\":\"GeneratedFindingCountryName\"},\"city\":{\"cityName\":\"GeneratedFindingCityName\"},\"geoLocation\":{\"lat\":0,\"lon\":0}},\"affectedResources\":{}}},\"resourceRole\":\"TARGET\",\"additionalInfo\":{\"unusual\":{\"isps\":\"17756\"},\"sample\":true},\"eventFirstSeen\":\"2018-11-08T20:19:20.199Z\",\"eventLastSeen\":\"2018-11-08T20:21:59.713Z\",\"archived\":false,\"count\":2},\"severity\":8,\"createdAt\":\"2018-11-08T20:19:20.199Z\",\"updatedAt\":\"2018-11-08T20:21:59.713Z\",\"title\":\"Unusual network permission reconnaissance activity by GeneratedFindingUserName.\",\"description\":\"APIs commonly used to discover the network access permissions of existing security groups, ACLs and routes in your account, was invoked by IAM principal GeneratedFindingUserName. Such activity is not typically seen from this principal.\"}}",
+  "Timestamp": "2018-11-08T20:26:03.089Z",
+  "SignatureVersion": "1",
+  "Signature": "KKQENDdT/coSAidVcYCziRCfzx4mP3hTF3wCwRpa++Dsa042WUTwECm2sNIjFUb6GREECad2Z5AR48P4l5EyTH2r4AlA9TeLh50p7Gxp5zfaHpC9bjuZynGZYn3NCWTQApMXw7Rtr8LL65mJuC+HY2Yb7RwukbdrquK+I7shLTZtu9A7TbWMn2dfHs8ovsF0FzyvlyhkMNahaHyX2Nj4Cf7L5lx7fTlBvExNaZv5Orw08OUhfW58ocRluUeORfzNuehhGnPXA8Z4TKL+JgGT6y/2oaAkuThICzUxei9jR0rkz260y6VxN/p8m4KDFbgiM3OZBHbQQVx/2JU0YwoM+g==",
+  "SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:785665517223:PD-GuardDuty:658275cf-64ca-4874-a4e5-d20b4aa45416"
+};
+
+var console_login_bc = {
+  "Type": "Notification",
+  "MessageId": "f5ec48ad-d6ab-5781-b041-1cf348b0edd6",
+  "TopicArn": "arn:aws:sns:us-east-1:785665517223:PD-GuardDuty",
+  "Message": "{\"version\":\"0\",\"id\":\"adf4dbb4-94dd-eaea-a076-b952733f0a6f\",\"detail-type\":\"GuardDuty Finding\",\"source\":\"aws.guardduty\",\"account\":\"785665517223\",\"time\":\"2018-11-08T20:25:00Z\",\"region\":\"us-east-1\",\"resources\":[],\"detail\":{\"schemaVersion\":\"2.0\",\"accountId\":\"785665517223\",\"region\":\"us-east-1\",\"partition\":\"aws\",\"id\":\"b8b37a7d5503c46a72d875e4293efd33\",\"arn\":\"arn:aws:guardduty:us-east-1:785665517223:detector/42b37a41c84bb93843b6829029ead712/finding/b8b37a7d5503c46a72d875e4293efd33\",\"type\":\"UnauthorizedAccess:IAMUser/ConsoleLogin\",\"resource\":{\"resourceType\":\"AccessKey\",\"accessKeyDetails\":{\"accessKeyId\":\"GeneratedFindingAccessKeyId\",\"principalId\":\"GeneratedFindingPrincipalId\",\"userType\":\"IAMUser\",\"userName\":\"GeneratedFindingUserName\"}},\"service\":{\"serviceName\":\"guardduty\",\"detectorId\":\"42b37a41c84bb93843b6829029ead712\",\"action\":{\"actionType\":\"AWS_API_CALL\",\"awsApiCallAction\":{\"api\":\"GeneratedFindingAPIName\",\"serviceName\":\"GeneratedFindingAPIServiceName\",\"callerType\":\"Remote IP\",\"remoteIpDetails\":{\"ipAddressV4\":\"198.51.100.0\",\"organization\":{\"asn\":\"-1\",\"asnOrg\":\"GeneratedFindingASNOrg\",\"isp\":\"GeneratedFindingISP\",\"org\":\"GeneratedFindingORG\"},\"country\":{\"countryName\":\"GeneratedFindingCountryName\"},\"city\":{\"cityName\":\"GeneratedFindingCityName\"},\"geoLocation\":{\"lat\":0,\"lon\":0}},\"affectedResources\":{}}},\"resourceRole\":\"TARGET\",\"additionalInfo\":{\"unusual\":{\"isps\":\"17756\"},\"sample\":true},\"eventFirstSeen\":\"2018-11-08T20:19:20.199Z\",\"eventLastSeen\":\"2018-11-08T20:21:59.713Z\",\"archived\":false,\"count\":2},\"severity\":8,\"createdAt\":\"2018-11-08T20:19:20.199Z\",\"updatedAt\":\"2018-11-08T20:21:59.713Z\",\"title\":\"Unusual console login was seen for principal GeneratedFindingUserName.\",\"description\":\"Unusual console login seen from principal GeneratedFindingUserName. Login activity using this client application, from the specific location has not been seen before from this principal.\"}}",
+  "Timestamp": "2018-11-08T20:26:03.089Z",
+  "SignatureVersion": "1",
+  "Signature": "KKQENDdT/coSAidVcYCziRCfzx4mP3hTF3wCwRpa++Dsa042WUTwECm2sNIjFUb6GREECad2Z5AR48P4l5EyTH2r4AlA9TeLh50p7Gxp5zfaHpC9bjuZynGZYn3NCWTQApMXw7Rtr8LL65mJuC+HY2Yb7RwukbdrquK+I7shLTZtu9A7TbWMn2dfHs8ovsF0FzyvlyhkMNahaHyX2Nj4Cf7L5lx7fTlBvExNaZv5Orw08OUhfW58ocRluUeORfzNuehhGnPXA8Z4TKL+JgGT6y/2oaAkuThICzUxei9jR0rkz260y6VxN/p8m4KDFbgiM3OZBHbQQVx/2JU0YwoM+g==",
+  "SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:785665517223:PD-GuardDuty:658275cf-64ca-4874-a4e5-d20b4aa45416"
+};
+
+var turn_off_logging_bc1 = {
+  "Type": "Notification",
+  "MessageId": "f5ec48ad-d6ab-5781-b041-1cf348b0edd6",
+  "TopicArn": "arn:aws:sns:us-east-1:785665517223:PD-GuardDuty",
+  "Message": "{\"version\":\"0\",\"id\":\"adf4dbb4-94dd-eaea-a076-b952733f0a6f\",\"detail-type\":\"GuardDuty Finding\",\"source\":\"aws.guardduty\",\"account\":\"785665517223\",\"time\":\"2018-11-08T20:25:00Z\",\"region\":\"us-east-1\",\"resources\":[],\"detail\":{\"schemaVersion\":\"2.0\",\"accountId\":\"785665517223\",\"region\":\"us-east-1\",\"partition\":\"aws\",\"id\":\"b8b37a7d5503c46a72d875e4293efd33\",\"arn\":\"arn:aws:guardduty:us-east-1:785665517223:detector/42b37a41c84bb93843b6829029ead712/finding/b8b37a7d5503c46a72d875e4293efd33\",\"type\":\"Stealth:IAMUser/LoggingConfigurationModified\",\"resource\":{\"resourceType\":\"AccessKey\",\"accessKeyDetails\":{\"accessKeyId\":\"GeneratedFindingAccessKeyId\",\"principalId\":\"GeneratedFindingPrincipalId\",\"userType\":\"IAMUser\",\"userName\":\"GeneratedFindingUserName\"}},\"service\":{\"serviceName\":\"guardduty\",\"detectorId\":\"42b37a41c84bb93843b6829029ead712\",\"action\":{\"actionType\":\"AWS_API_CALL\",\"awsApiCallAction\":{\"api\":\"GeneratedFindingAPIName\",\"serviceName\":\"GeneratedFindingAPIServiceName\",\"callerType\":\"Remote IP\",\"remoteIpDetails\":{\"ipAddressV4\":\"198.51.100.0\",\"organization\":{\"asn\":\"-1\",\"asnOrg\":\"GeneratedFindingASNOrg\",\"isp\":\"GeneratedFindingISP\",\"org\":\"GeneratedFindingORG\"},\"country\":{\"countryName\":\"GeneratedFindingCountryName\"},\"city\":{\"cityName\":\"GeneratedFindingCityName\"},\"geoLocation\":{\"lat\":0,\"lon\":0}},\"affectedResources\":{}}},\"resourceRole\":\"TARGET\",\"additionalInfo\":{\"unusual\":{\"isps\":\"17756\"},\"sample\":true},\"eventFirstSeen\":\"2018-11-08T20:19:20.199Z\",\"eventLastSeen\":\"2018-11-08T20:21:59.713Z\",\"archived\":false,\"count\":2},\"severity\":8,\"createdAt\":\"2018-11-08T20:19:20.199Z\",\"updatedAt\":\"2018-11-08T20:21:59.713Z\",\"title\":\"Unusual changes to API activity logging by GeneratedFindingUserName.\",\"description\",\"description\":\"APIs commonly used to stop CloudTrail logging, delete existing logs and other such activity that erases any trace of activity in the account, was invoked by IAM principal GeneratedFindingUserName. Such activity is not typically seen from this principal.\"}}",
+  "Timestamp": "2018-11-08T20:26:03.089Z",
+  "SignatureVersion": "1",
+  "Signature": "KKQENDdT/coSAidVcYCziRCfzx4mP3hTF3wCwRpa++Dsa042WUTwECm2sNIjFUb6GREECad2Z5AR48P4l5EyTH2r4AlA9TeLh50p7Gxp5zfaHpC9bjuZynGZYn3NCWTQApMXw7Rtr8LL65mJuC+HY2Yb7RwukbdrquK+I7shLTZtu9A7TbWMn2dfHs8ovsF0FzyvlyhkMNahaHyX2Nj4Cf7L5lx7fTlBvExNaZv5Orw08OUhfW58ocRluUeORfzNuehhGnPXA8Z4TKL+JgGT6y/2oaAkuThICzUxei9jR0rkz260y6VxN/p8m4KDFbgiM3OZBHbQQVx/2JU0YwoM+g==",
+  "SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:785665517223:PD-GuardDuty:658275cf-64ca-4874-a4e5-d20b4aa45416"
+};
+
+var crypto_dns_bc1 = {
+  "Type": "Notification",
+  "MessageId": "f5ec48ad-d6ab-5781-b041-1cf348b0edd6",
+  "TopicArn": "arn:aws:sns:us-east-1:785665517223:PD-GuardDuty",
+  "Message": "{\"version\":\"0\",\"id\":\"adf4dbb4-94dd-eaea-a076-b952733f0a6f\",\"detail-type\":\"GuardDuty Finding\",\"source\":\"aws.guardduty\",\"account\":\"785665517223\",\"time\":\"2018-11-08T20:25:00Z\",\"region\":\"us-east-1\",\"resources\":[],\"detail\":{\"schemaVersion\":\"2.0\",\"accountId\":\"785665517223\",\"region\":\"us-east-1\",\"partition\":\"aws\",\"id\":\"b8b37a7d5503c46a72d875e4293efd33\",\"arn\":\"arn:aws:guardduty:us-east-1:785665517223:detector/42b37a41c84bb93843b6829029ead712/finding/b8b37a7d5503c46a72d875e4293efd33\",\"type\":\"CryptoCurrency:EC2/BitcoinTool.B!DNS\",\"resource\":{\"resourceType\":\"AccessKey\",\"accessKeyDetails\":{\"accessKeyId\":\"GeneratedFindingAccessKeyId\",\"principalId\":\"GeneratedFindingPrincipalId\",\"userType\":\"IAMUser\",\"userName\":\"GeneratedFindingUserName\"}},\"service\":{\"serviceName\":\"guardduty\",\"detectorId\":\"42b37a41c84bb93843b6829029ead712\",\"action\":{\"actionType\":\"AWS_API_CALL\",\"awsApiCallAction\":{\"api\":\"GeneratedFindingAPIName\",\"serviceName\":\"GeneratedFindingAPIServiceName\",\"callerType\":\"Remote IP\",\"remoteIpDetails\":{\"ipAddressV4\":\"198.51.100.0\",\"organization\":{\"asn\":\"-1\",\"asnOrg\":\"GeneratedFindingASNOrg\",\"isp\":\"GeneratedFindingISP\",\"org\":\"GeneratedFindingORG\"},\"country\":{\"countryName\":\"GeneratedFindingCountryName\"},\"city\":{\"cityName\":\"GeneratedFindingCityName\"},\"geoLocation\":{\"lat\":0,\"lon\":0}},\"affectedResources\":{}}},\"resourceRole\":\"TARGET\",\"additionalInfo\":{\"unusual\":{\"isps\":\"17756\"},\"sample\":true},\"eventFirstSeen\":\"2018-11-08T20:19:20.199Z\",\"eventLastSeen\":\"2018-11-08T20:21:59.713Z\",\"archived\":false,\"count\":2},\"severity\":8,\"createdAt\":\"2018-11-08T20:19:20.199Z\",\"updatedAt\":\"2018-11-08T20:21:59.713Z\",\"title\":\"Bitcoin-related domain name queried by EC2 instance i-99999999.\",\"description\":\"EC2 instance i-99999999 is querying a domain name that is associated with Bitcoin-related activity.\"}}",
+  "Timestamp": "2018-11-08T20:26:03.089Z",
+  "SignatureVersion": "1",
+  "Signature": "KKQENDdT/coSAidVcYCziRCfzx4mP3hTF3wCwRpa++Dsa042WUTwECm2sNIjFUb6GREECad2Z5AR48P4l5EyTH2r4AlA9TeLh50p7Gxp5zfaHpC9bjuZynGZYn3NCWTQApMXw7Rtr8LL65mJuC+HY2Yb7RwukbdrquK+I7shLTZtu9A7TbWMn2dfHs8ovsF0FzyvlyhkMNahaHyX2Nj4Cf7L5lx7fTlBvExNaZv5Orw08OUhfW58ocRluUeORfzNuehhGnPXA8Z4TKL+JgGT6y/2oaAkuThICzUxei9jR0rkz260y6VxN/p8m4KDFbgiM3OZBHbQQVx/2JU0YwoM+g==",
+  "SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:785665517223:PD-GuardDuty:658275cf-64ca-4874-a4e5-d20b4aa45416"
 };
 
 var ct_no2fa = {
@@ -193,6 +205,10 @@ var payloads = {
     "GuardDuty: DNS Data Exfiltration": dns_data_exfiltration,
     "GuardDuty: GuardDuty Changes": guard_duty_changes,
     "GuardDuty: API's invoked": apis_invoked,
+    "GuardDuty: Recon NetworkPermissions": recon_network_permissions,
+    "GuardDuty: Unauthorized Access": console_login_bc,
+    "GuardDuty: Turn Off Logging": turn_off_logging_bc1,
+    "GuardDuty: Bitcoin DNS": crypto_dns_bc1,
     "PHD: Elastic Load Balancer API Issue": phd_elb_api_issue,
     "PHD: EC2 Store Drive Issue (US West 1)": phd_ec2_store_drive_west1,
     "PHD: EC2 Store Drive Issue (US West 2)": phd_ec2_store_drive_west2,
