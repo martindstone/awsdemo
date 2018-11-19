@@ -1,3 +1,10 @@
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 function send(routing_key, payload) {
 	var desc = payload['description'] || 'unknown';
 	var message = {
@@ -22,8 +29,15 @@ function send(routing_key, payload) {
 	$.ajax(message);
 }
 
-function main() {
-	$('.selectpicker').selectpicker();
+function populateSendSelects() {
+	var station = $('#station-select').val();
+
+	$('#payload-select').html('');
+	$('#service-select').html('');
+	$('#sequence-select').html('');
+
+	$('#sequence-send-button').unbind("click");
+	$('#send-button').unbind("click");
 
 	Object.keys(payloads).forEach(function(name) {
 		$('#payload-select').append($('<option/>', {
@@ -33,15 +47,15 @@ function main() {
 	});
 	$('#payload-select').selectpicker('refresh');
 
-	Object.keys(services).forEach(function(name) {
+	Object.keys(services[station]).forEach(function(name) {
 		$('#service-select').append($('<option/>', {
-			value: services[name],
+			value: services[station][name],
 			text: name
 		}));
 	});
 	$('#service-select').selectpicker('refresh');
 
-	Object.keys(sequences).forEach(function(name) {
+	Object.keys(sequences[station]).forEach(function(name) {
 		$('#sequence-select').append($('<option/>', {
 			value: name,
 			text: name
@@ -56,11 +70,31 @@ function main() {
 	});
 
 	$('#sequence-send-button').click(function() {
-		var sequence = sequences[$('#sequence-select').val()];
+		console.log(`oh hi ${station}: ${$('#sequence-select').val()}`);
+		var sequence = sequences[station][$('#sequence-select').val()];
 		sequence.forEach(function(event) {
 			setTimeout(send, event['delay'] * 1000, event['routing_key'], event['payload']);
 		});
 	});
+}
+
+var station = getParameterByName("station");
+
+function main() {
+	$('.selectpicker').selectpicker();
+
+	Object.keys(sequences).forEach(function(name) {
+		$('#station-select').append($('<option/>', {
+			value: name,
+			text: name
+		}));
+	});
+	$('#station-select').selectpicker('refresh');
+
+	$('#station-select').change(function() {
+		populateSendSelects();
+	});
+	populateSendSelects();
 }
 
 $(document).ready(main);
