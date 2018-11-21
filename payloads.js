@@ -266,7 +266,7 @@ var payloads = {
     "GuardDuty: Bitcoin DNS #2": crypto_dns_bc2,
     "GuardDuty: Bitcoin DNS #3": crypto_dns_bc3,
     "CloudWatch: Elasticity Issue": cw_elasticity_issue,
-    "CloudWatch: JVM RestartCount": cw_jvm_restart,
+    "CloudWatch: JVM Restart": cw_jvm_restart,
     "PHD: Elastic Load Balancer API Issue": phd_elb_api_issue,
     "PHD: EC2 Store Drive Issue (US West 1)": phd_ec2_store_drive_west1,
     "PHD: EC2 Store Drive Issue (US West 2)": phd_ec2_store_drive_west2,
