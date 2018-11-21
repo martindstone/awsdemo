@@ -3,69 +3,69 @@ var sequences = {
 
     "GD 5 Sample Findings": [
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: SSH Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: DNS Data Exfiltration"],
             "delay": 0
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: GuardDuty Changes"],
             "delay": 0
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: API's invoked"],
             "delay": 0
         }
     ],
     "GD BitCoin Alerts": [
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Recon NetworkPermissions"],
             "delay": 3
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Unauthorized Access"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 3
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 4
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #2"],
-            "delay": 2
+            "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #3"],
             "delay": 2
         }
@@ -121,22 +121,22 @@ var sequences = {
     ],
     "CloudWatch JVM Restarts": [
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         }       ],
@@ -145,69 +145,69 @@ var sequences = {
 
     "GD 5 Sample Findings": [
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: SSH Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: DNS Data Exfiltration"],
             "delay": 0
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: GuardDuty Changes"],
             "delay": 0
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: API's invoked"],
             "delay": 0
         }
     ],
     "GD BitCoin Alerts": [
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Recon NetworkPermissions"],
             "delay": 3
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Unauthorized Access"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 3
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 4
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #2"],
-            "delay": 2
+            "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #3"],
             "delay": 2
         }
@@ -263,22 +263,22 @@ var sequences = {
     ],
     "CloudWatch JVM Restarts": [
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         }       ],
@@ -287,69 +287,69 @@ var sequences = {
 
     "GD 5 Sample Findings": [
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: SSH Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: DNS Data Exfiltration"],
             "delay": 0
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: GuardDuty Changes"],
             "delay": 0
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: API's invoked"],
             "delay": 0
         }
     ],
     "GD BitCoin Alerts": [
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Recon NetworkPermissions"],
             "delay": 3
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Unauthorized Access"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 3
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 4
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #2"],
-            "delay": 2
+            "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #3"],
             "delay": 2
         }
@@ -405,22 +405,22 @@ var sequences = {
     ],
     "CloudWatch JVM Restarts": [
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         }       ],
@@ -429,69 +429,69 @@ var sequences = {
 
     "GD 5 Sample Findings": [
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: SSH Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: DNS Data Exfiltration"],
             "delay": 0
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: GuardDuty Changes"],
             "delay": 0
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: API's invoked"],
             "delay": 0
         }
     ],
     "GD BitCoin Alerts": [
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Recon NetworkPermissions"],
             "delay": 3
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Unauthorized Access"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 3
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 4
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #2"],
-            "delay": 2
+            "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #3"],
             "delay": 2
         }
@@ -547,22 +547,22 @@ var sequences = {
     ],
     "CloudWatch JVM Restarts": [
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         }       ],
@@ -571,69 +571,69 @@ var sequences = {
 
     "GD 5 Sample Findings": [
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: SSH Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: DNS Data Exfiltration"],
             "delay": 0
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: GuardDuty Changes"],
             "delay": 0
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: API's invoked"],
             "delay": 0
         }
     ],
     "GD BitCoin Alerts": [
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Recon NetworkPermissions"],
             "delay": 3
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Unauthorized Access"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 3
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 4
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #2"],
-            "delay": 2
+            "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["05 Demo (John)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #3"],
             "delay": 2
         }
@@ -689,22 +689,22 @@ var sequences = {
     ],
     "CloudWatch JVM Restarts": [
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["05 Demo (John)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["05 Demo (John)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["05 Demo (John)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["05 Demo (John)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         }       ],
@@ -713,69 +713,69 @@ var sequences = {
 
     "GD 5 Sample Findings": [
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: SSH Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: DNS Data Exfiltration"],
             "delay": 0
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: GuardDuty Changes"],
             "delay": 0
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: API's invoked"],
             "delay": 0
         }
     ],
     "GD BitCoin Alerts": [
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Recon NetworkPermissions"],
             "delay": 3
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Unauthorized Access"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 3
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 4
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #2"],
-            "delay": 2
+            "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #3"],
             "delay": 2
         }
@@ -831,22 +831,22 @@ var sequences = {
     ],
     "CloudWatch JVM Restarts": [
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         }       ],
@@ -855,69 +855,69 @@ var sequences = {
 
     "GD 5 Sample Findings": [
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: RDP Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: SSH Brute Force Attack"],
             "delay": 0
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: DNS Data Exfiltration"],
             "delay": 0
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: GuardDuty Changes"],
             "delay": 0
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: API's invoked"],
             "delay": 0
         }
     ],
     "GD BitCoin Alerts": [
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Recon NetworkPermissions"],
             "delay": 3
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Unauthorized Access"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 3
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
+            "delay": 4
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #2"],
-            "delay": 2
+            "delay": 1
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
+            "routing_key": services["07 Demo (TBD)"]["GuardDuty"],
             "payload": payloads["GuardDuty: Bitcoin DNS #3"],
             "delay": 2
         }
@@ -973,22 +973,22 @@ var sequences = {
     ],
     "CloudWatch JVM Restarts": [
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudTrail"],
+            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 1
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudTrail"],
+            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudTrail"],
+            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (TBD)"]["CloudTrail"],
+            "routing_key": services["07 Demo (TBD)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM RestartCount"],
             "delay": 2
         }       ],
