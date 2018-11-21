@@ -70,7 +70,7 @@ var sequences = {
             "delay": 2
         }
     ],
-    "Personal Health Daskboard": [
+    "Personal Health Dashboard": [
         {
             "routing_key": services["01 Demo (Ken)"]["PHD"],
             "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
@@ -212,7 +212,7 @@ var sequences = {
             "delay": 2
         }
     ],
-    "Personal Health Daskboard": [
+    "Personal Health Dashboard": [
         {
             "routing_key": services["02 Demo (Eric)"]["PHD"],
             "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
@@ -354,7 +354,7 @@ var sequences = {
             "delay": 2
         }
     ],
-    "Personal Health Daskboard": [
+    "Personal Health Dashboard": [
         {
             "routing_key": services["03 Demo (Masado)"]["PHD"],
             "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
@@ -496,7 +496,7 @@ var sequences = {
             "delay": 2
         }
     ],
-    "Personal Health Daskboard": [
+    "Personal Health Dashboard": [
         {
             "routing_key": services["04 Demo (Edward)"]["PHD"],
             "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
@@ -638,7 +638,7 @@ var sequences = {
             "delay": 2
         }
     ],
-    "Personal Health Daskboard": [
+    "Personal Health Dashboard": [
         {
             "routing_key": services["05 Demo (John)"]["PHD"],
             "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
@@ -780,7 +780,7 @@ var sequences = {
             "delay": 2
         }
     ],
-    "Personal Health Daskboard": [
+    "Personal Health Dashboard": [
         {
             "routing_key": services["06 Demo (Cheryl)"]["PHD"],
             "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
@@ -922,7 +922,7 @@ var sequences = {
             "delay": 2
         }
     ],
-    "Personal Health Daskboard": [
+    "Personal Health Dashboard": [
         {
             "routing_key": services["07 Demo (TBD)"]["PHD"],
             "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],

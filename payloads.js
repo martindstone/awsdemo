@@ -263,6 +263,8 @@ var payloads = {
     // "GuardDuty: Turn Off Logging (host 2)": turn_off_logging_bc2,
     // "GuardDuty: Turn Off Logging (host 3)": turn_off_logging_bc3,
     "GuardDuty: Bitcoin DNS": crypto_dns_bc1,
+    "GuardDuty: Bitcoin DNS #2": crypto_dns_bc2,
+    "GuardDuty: Bitcoin DNS #3": crypto_dns_bc3,
     "CloudWatch: Elasticity Issue": cw_elasticity_issue,
     "CloudWatch: JVM RestartCount": cw_jvm_restart,
     "PHD: Elastic Load Balancer API Issue": phd_elb_api_issue,
