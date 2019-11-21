@@ -1,51 +1,59 @@
 var services = {
-        "01 Demo (Ken)": {
-                "CloudTrail": "d7c25cd46de04b41afd0412266b560da",
-                "CloudWatch": "704feb51158e47359ebf872a3ad43aee",
-                "GuardDuty": "7d481e115c294f9cbf77c2796137607d",
-                "New Relic": "f56a6e39342c42f4bf3dc05015f3123a",
-                "PHD": "f377979711fa41b593f57284fb6ebce4"
+        "Product Search (pdtresponder01)": {
+                "CloudTrail": "04f8c2ce6354495db3a49b53eaa6276c",
+                "CloudWatch": "fcc16b53b8ca47168e55e9519cdfd70e",
+                "GuardDuty": "c182e6966ded46379f1c0c01f589967b",
+                "New Relic": "0c87a93de5234c02a9436d69941a1865",
+                "PHD": "c73ccf3be857405b9126eba37910a536"
         },
-        "02 Demo (Eric)": {
-                "CloudTrail": "55e8ab68e5f046849c5a5729431a6d77",
-                "CloudWatch": "61b6d2a5944b453292291dcc34d180e1",
-                "GuardDuty": "f4c066879faf42e5aba43de9ee9d97ae",
-                "New Relic": "63864c39d71d4f3b9b40ba016d8549fc",
-                "PHD": "301367190c5f4fd19198fe3d30c01cc4"
+        "Inventory (pdtresponder02)": {
+                "CloudTrail": "67a5c673bbed431fbc961ff481ad2122",
+                "CloudWatch": "61ca5061a06e478d91b3539279dab66e",
+                "GuardDuty": "b85fe294c4284b009f94e3cd51d3d3a2",
+                "New Relic": "d2d302ea0def4b2cb86d9c480a53d859",
+                "PHD": "b0cf9c17b8394d558615f8fdfb6d2167"
         },
-        "03 Demo (Masado)": {
-                "CloudTrail": "a5793607eb7d4a78a67a365cfa8ba4c1",
-                "CloudWatch": "b2e5f82381b94abd8cc15bdc7519be54",
-                "GuardDuty": "e300f6f3f3064464810362446b0d6414",
-                "New Relic": "5977fc1453a44149b2b68d463960c297",
-                "PHD": "1e2e28c35ec6433e9070bf2478a6699b"
+        "Checkout (pdtresponder03)": {
+                "CloudTrail": "29862e319c0e41e59126c3edcc5960ce",
+                "CloudWatch": "559e41050cdc44858e85fd714923b2f2",
+                "GuardDuty": "84b97710889640fdb9d5aec166a79beb",
+                "New Relic": "009fdc8c9a5244d9bca938c55b403984",
+                "PHD": "3c7d804ec0d74d85b5e7fb28c5f2379d"
         },
-        "04 Demo (Edward)": {
-                "CloudTrail": "1937a580428d4e2fa32dca1b3169d052",
-                "CloudWatch": "67066c29b9234a77aa08ae4ad2402c3c",
-                "GuardDuty": "104c29322da74b2d86af634f9294428b",
-                "New Relic": "d784391ffb9c45c991dec0db8d17cd6c",
-                "PHD": "2454e628fd85466a8ad82654d215eef1"
+        "User Profile (pdtresponder04)": {
+                "CloudTrail": "1a59d7eb10d649a3be1cc060477a784e",
+                "CloudWatch": "f323522ce28a4c4abef7d09af3ea3f24",
+                "GuardDuty": "20cbb879f56d4ed9987df5e5c1a93071",
+                "New Relic": "705fc1bfd47a44ffb8ff80657ad0b91e",
+                "PHD": "fed998f7eb9f416ea9f07c34e08a8b75"
         },
-        "05 Demo (John)": {
-                "CloudTrail": "427ece0b82854ec1ba36f89f7fd1a52a",
-                "CloudWatch": "2a63716a97024493b592952753b60773",
-                "GuardDuty": "55f233731f424cb1bb7292578f854092",
-                "New Relic": "334c8d1b409948059bd313e1390747f6",
-                "PHD": "4c2fbc028e5043cca507431927f4efd0"
+        "Payment Processor (pdtresponder05)": {
+                "CloudTrail": "e60f4823e536476991c844a8d80e22d8",
+                "CloudWatch": "727e9265cc724eea835c9eae52c32789",
+                "GuardDuty": "85cfb2e1be8d4b2f8568a530b4a83045",
+                "New Relic": "d10ea9453a8e4d2d969057e1b852c164",
+                "PHD": "303495ae9bcb44c8826c6e3745bcc6c2"
+        }, 
+        "Shopping Cart (pdtresponder06)": {
+                "CloudTrail": "b2a5835f3b0646108f07dc5ec5cce17a",
+                "CloudWatch": "e8d4f1ee02434240b68d95b191eee353",
+                "GuardDuty": "368ce636f3684704a741b984449356b8",
+                "New Relic": "e3e1fe1744bb44599512fcc824f28d90",
+                "PHD": "aef3c88d68d7468cb91d83ede300537c"
         },
-        "06 Demo (Cheryl)": {
-                "CloudTrail": "675721bbfba54c7780ce37849c082bd5",
-                "CloudWatch": "71e65a93e1d74f61b9de5f74c29b1a59",
-                "GuardDuty": "ea0c802e91b24d15b460771bdf210f79",
-                "New Relic": "09cd84f4ac634710a8f1cdbe4318617c",
-                "PHD": "f6d63d9cb6604b12883518008f99330b"
+        "Mobile Inventory (pdtresponder07)": {
+                "CloudTrail": "8725886ee54443c59d741e313a21788c",
+                "CloudWatch": "936170746453481a859aaf185a15649f",
+                "GuardDuty": "b94ab0649450482bab6be8f87cc900ca",
+                "New Relic": "e846e12a908145289158d17830a6a66c",
+                "PHD": "9a93fc243366414eabf5cd531c198afc"
         },
-        "07 Demo (Mary)": {
-                "CloudTrail": "ed0f44a8fb1245f6852569a13de650c8",
-                "CloudWatch": "ed0f44a8fb1245f6852569a13de650c8",
-                "GuardDuty": "a76adb20e99f461e9d9458405bacc47b",
-                "New Relic": "7002fd768c974d99aee75f215e4354bc",
-                "PHD": "94290dbbdece49a5ae2d66e80a38821d"
+        "Promotions (pdtresponder08)": {
+                "CloudTrail": "eb1d58c3bb7048d79ff31f371e635c6e",
+                "CloudWatch": "8931019e6f424e8fab9b1ae622cdca9e",
+                "GuardDuty": "0844292a79f34dc6a0934a0c657e4ec4",
+                "New Relic": "37d718f5fd71463a982a3bbf52630c73",
+                "PHD": "648034a77be84c39b4502b13cf06de77"
         }
+        
 };

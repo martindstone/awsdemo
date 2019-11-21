@@ -1,996 +1,1433 @@
 var sequences = {
-    "01 Demo (Ken)": {
-
-    "GD 5 Sample Findings": [
+    "Product Search (pdtresponder01)": {
+     "All AWS Events": [
         {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: DNS Data Exfiltration"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: GuardDuty Changes"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: API's invoked"],
-            "delay": 0
-        }
-    ],
-    "GD BitCoin Alerts": [
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Recon NetworkPermissions"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Unauthorized Access"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 4
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
-            "delay": 2
-        }
-    ],
-    "Personal Health Dashboard": [
-        {
-            "routing_key": services["01 Demo (Ken)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["New Relic"],
-            "payload": payloads["New Relic: Response Time Increase"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["01 Demo (Ken)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }
-    ],
-    "CloudTrail Unsafe logins": [
+        },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+         {
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
             "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
             "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudTrail"],
+            "routing_key": services["Product Search (pdtresponder01)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
             "delay": 1
-        }
-    ],
-    "CloudWatch JVM Restarts": [
+        },      
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["Product Search (pdtresponder01)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Product Search (pdtresponder01)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["01 Demo (Ken)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }       ],
+        },
+         {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
+            "delay": 1
+        },      
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        }
+    ],
     },
-    "02 Demo (Eric)": {
-
-    "GD 5 Sample Findings": [
+    "Checkout (pdtresponder03)": {
+        "All AWS Events": [
         {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: DNS Data Exfiltration"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: GuardDuty Changes"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: API's invoked"],
-            "delay": 0
-        }
-    ],
-    "GD BitCoin Alerts": [
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Recon NetworkPermissions"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Unauthorized Access"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 4
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
-            "delay": 2
-        }
-    ],
-    "Personal Health Dashboard": [
-        {
-            "routing_key": services["02 Demo (Eric)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["New Relic"],
-            "payload": payloads["New Relic: Response Time Increase"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["02 Demo (Eric)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }
-    ],
-    "CloudTrail Unsafe logins": [
+        },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+         {
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
             "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
             "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudTrail"],
+            "routing_key": services["Checkout (pdtresponder03)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
             "delay": 1
-        }
-    ],
-    "CloudWatch JVM Restarts": [
+        },      
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["Checkout (pdtresponder03)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Checkout (pdtresponder03)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["02 Demo (Eric)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }       ],
+        },
+         {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
+            "delay": 1
+        },      
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        }
+    ],
     },
-    "03 Demo (Masado)": {
-
-    "GD 5 Sample Findings": [
+    "Shopping Cart (pdtresponder06)": {
+        "All AWS Events": [
         {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: DNS Data Exfiltration"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: GuardDuty Changes"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: API's invoked"],
-            "delay": 0
-        }
-    ],
-    "GD BitCoin Alerts": [
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Recon NetworkPermissions"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Unauthorized Access"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 4
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
-            "delay": 2
-        }
-    ],
-    "Personal Health Dashboard": [
-        {
-            "routing_key": services["03 Demo (Masado)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["New Relic"],
-            "payload": payloads["New Relic: Response Time Increase"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["03 Demo (Masado)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }
-    ],
-    "CloudTrail Unsafe logins": [
+        },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+         {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
             "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
             "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudTrail"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
             "delay": 1
-        }
-    ],
-    "CloudWatch JVM Restarts": [
+        },      
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Shopping Cart (pdtresponder06)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["03 Demo (Masado)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }       ],
+        },
+         {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
+            "delay": 1
+        },      
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        }
+    ],
     },
-    "04 Demo (Edward)": {
-
-    "GD 5 Sample Findings": [
+    "Mobile Inventory (pdtresponder07)": {
+        "All AWS Events": [
         {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: DNS Data Exfiltration"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: GuardDuty Changes"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: API's invoked"],
-            "delay": 0
-        }
-    ],
-    "GD BitCoin Alerts": [
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Recon NetworkPermissions"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Unauthorized Access"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 4
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
-            "delay": 2
-        }
-    ],
-    "Personal Health Dashboard": [
-        {
-            "routing_key": services["04 Demo (Edward)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["New Relic"],
-            "payload": payloads["New Relic: Response Time Increase"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["04 Demo (Edward)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }
-    ],
-    "CloudTrail Unsafe logins": [
+        },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+         {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
             "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
             "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudTrail"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
             "delay": 1
-        }
-    ],
-    "CloudWatch JVM Restarts": [
+        },      
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Mobile Inventory (pdtresponder07)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["04 Demo (Edward)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }       ],
+        },
+         {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
+            "delay": 1
+        },      
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        }
+    ],
     },
-    "05 Demo (John)": {
-
-    "GD 5 Sample Findings": [
+    "Payment Processor (pdtresponder05)": {
+        "All AWS Events": [
         {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: DNS Data Exfiltration"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: GuardDuty Changes"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: API's invoked"],
-            "delay": 0
-        }
-    ],
-    "GD BitCoin Alerts": [
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Recon NetworkPermissions"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Unauthorized Access"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 4
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
-            "delay": 2
-        }
-    ],
-    "Personal Health Dashboard": [
-        {
-            "routing_key": services["05 Demo (John)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["New Relic"],
-            "payload": payloads["New Relic: Response Time Increase"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["05 Demo (John)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }
-    ],
-    "CloudTrail Unsafe logins": [
+        },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+         {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
             "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
             "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudTrail"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
             "delay": 1
-        }
-    ],
-    "CloudWatch JVM Restarts": [
+        },      
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["Payment Processor (pdtresponder05)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Payment Processor (pdtresponder05)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["05 Demo (John)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }       ],
+        },
+         {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
+            "delay": 1
+        },      
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        }
+    ],
     },
-    "06 Demo (Cheryl)": {
-
-    "GD 5 Sample Findings": [
+    "User Profile (pdtresponder04)": {
+        "All AWS Events": [
         {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: DNS Data Exfiltration"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: GuardDuty Changes"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: API's invoked"],
-            "delay": 0
-        }
-    ],
-    "GD BitCoin Alerts": [
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Recon NetworkPermissions"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Unauthorized Access"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 4
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
-            "delay": 2
-        }
-    ],
-    "Personal Health Dashboard": [
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["New Relic"],
-            "payload": payloads["New Relic: Response Time Increase"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["06 Demo (Cheryl)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }
-    ],
-    "CloudTrail Unsafe logins": [
+        },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+         {
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
             "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
             "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudTrail"],
+            "routing_key": services["User Profile (pdtresponder04)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
             "delay": 1
-        }
-    ],
-    "CloudWatch JVM Restarts": [
+        },      
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["User Profile (pdtresponder04)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["User Profile (pdtresponder04)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["06 Demo (Cheryl)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }       ],
+        },
+         {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
+            "delay": 1
+        },      
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        }
+    ],
     },
-    "07 Demo (Mary)": {
-
-    "GD 5 Sample Findings": [
+    "Inventory (pdtresponder02)": {
+        "All AWS Events": [
         {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: DNS Data Exfiltration"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: GuardDuty Changes"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: API's invoked"],
-            "delay": 0
-        }
-    ],
-    "GD BitCoin Alerts": [
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Recon NetworkPermissions"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Unauthorized Access"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 3
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Turn Off Logging (host 1)"],
-            "delay": 4
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS"],
-            "delay": 2
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["GuardDuty"],
-            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
-            "delay": 2
-        }
-    ],
-    "Personal Health Dashboard": [
-        {
-            "routing_key": services["07 Demo (Mary)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
-            "delay": 0
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["New Relic"],
-            "payload": payloads["New Relic: Response Time Increase"],
-            "delay": 1
-        },
-        {
-            "routing_key": services["07 Demo (Mary)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["PHD"],
-            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }
-    ],
-    "CloudTrail Unsafe logins": [
+        },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudTrail"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudWatch"],
+            "payload": payloads["CloudWatch: JVM Restart"],
+            "delay": 2
+        },
+         {
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
             "delay": 1
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudTrail"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudTrail"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
             "delay": 1
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudTrail"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudTrail"],
             "payload": payloads["CloudTrail: Root Account Usage"],
             "delay": 1
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudTrail"],
+            "routing_key": services["Inventory (pdtresponder02)"]["CloudTrail"],
             "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
             "delay": 1
-        }
-    ],
-    "CloudWatch JVM Restarts": [
+        },      
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudWatch"],
+            "routing_key": services["Inventory (pdtresponder02)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Inventory (pdtresponder02)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 1
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
         },
         {
-            "routing_key": services["07 Demo (Mary)"]["CloudWatch"],
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudWatch"],
             "payload": payloads["CloudWatch: JVM Restart"],
             "delay": 2
-        }       ],
-    }
+        },
+         {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (amountjoy)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (jdoe)"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: Root Account Usage"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["CloudTrail"],
+            "payload": payloads["CloudTrail: No 2FA Auth (dmendez)"],
+            "delay": 1
+        },      
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 1)"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["New Relic"],
+            "payload": payloads["New Relic: Response Time Increase"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (US West 2)"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["PHD"],
+            "payload": payloads["PHD: EC2 Store Drive Issue (AP SouthEast 2)"],
+            "delay": 2
+        }, 
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Unauthorized Access"],
+            "delay": 2
+        },
+
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #2"],
+            "delay": 1
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: Bitcoin DNS #3"],
+            "delay": 2
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: RDP Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: SSH Brute Force Attack"],
+            "delay": 0
+        },
+        {
+            "routing_key": services["Promotions (pdtresponder08)"]["GuardDuty"],
+            "payload": payloads["GuardDuty: API's invoked"],
+            "delay": 0
+        }
+    ],
+
+    },
+
 };
